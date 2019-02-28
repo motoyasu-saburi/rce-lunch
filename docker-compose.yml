@@ -1,0 +1,25 @@
+struts2:
+    container_name: struts2
+    build: "./metasploit"
+    ports: 
+      - "18081:8080"
+
+metasploit:
+    container_name: metasploit
+    build: "./metasploit"
+    ports: 
+      - "9000"
+
+jenkins:
+    container_name: jenkins
+    build: "./jenkins"
+    ports:
+      - 18080:8080
+    volumes:
+        - "./jenkins/jenkins_home:/var/jenkins_home"
+nginx:
+    build: "./nginx"
+    ports:
+      - "10080:80"
+    volumes:
+      - ./nginx/public:/usr/share/nginx/html
