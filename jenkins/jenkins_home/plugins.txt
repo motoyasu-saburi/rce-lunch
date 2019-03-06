@@ -1,7 +1,0 @@
-pipeline-milestone-step
-pipeline-build-step
-pipeline-input-step
-pipeline-stage-step
-pipeline-graph-analysis
-pipeline-rest-api
-pipeline-stage-view
